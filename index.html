@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Cat and Meme API Example</title>
-</head>
-<body>
-  <button id="get-cat-btn">Get a random cat image</button>
-  <button id="get-meme-btn">Get a random meme</button>
-  <div id="image-container"></div>
-  <script src="app.js"></script>
-</body>
+  <head>
+    <title>Get a Random Cat Image</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" integrity="sha512-D5FZNG+oZn99VlL26wDX+U6RfgU6QX9fDcbuy6AMrScVrGqeu3MnVCVetPJKopUy7RvY0QQRX7lfRYZk6rG7rA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <section class="hero is-info">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Get a Random Cat Image</h1>
+          <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item" href="#">Home</a>
+                <a class="navbar-item" href="#">About</a>
+                <a class="navbar-item" href="#">Contact</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2 class="title">Welcome to Get a Random Cat Image</h2>
+        <p class="subtitle">Looking for a cute and random cat image? You've come to the right place! Our site has a huge collection of high-quality cat images that you can randomly generate by clicking the button below.</p>
+        <div class="buttons">
+          <button class="button is-primary" onclick="getRandomCatImage()">Get a Random Cat Image</button>
+        </div>
+        <div class="content">
+          <figure>
+            <img id="catImage" src="" alt="">
+          </figure>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>&copy; 2023 Get a Random Cat Image</p>
+      </div>
+    </footer>
+    <script>
+      function getRandomCatImage() {
+        const catImages = [
+          "https://example.com/cat1.jpg",
+          "https://example.com/cat2.jpg",
+          "https://example.com/cat3.jpg",
+          // add more cat image URLs here
+        ];
+        const randomIndex = Math.floor(Math.random() * catImages.length);
+        const catImage = document.getElementById("catImage");
+        catImage.src = catImages[randomIndex];
+      }
+    </script>
+  </body>
 </html>
 
