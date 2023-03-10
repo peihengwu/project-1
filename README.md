@@ -5,6 +5,12 @@
 Using APIs to create an interactive web page to generate interesting cat memes
 
 # technologies used
+HTML
+CSS
+JavaScript
+jQuery
+Bulma CSS
+FIGMA
 
 # screenshot
 
