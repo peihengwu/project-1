@@ -2,6 +2,7 @@
 
 
 # Description
+Using APIs to create an interactive web page to generate interesting cat memes
 
 # technologies used
 
@@ -17,11 +18,11 @@
 
 ## xxx (Second-level headings optionally may be used to group/categorize USs by type of functionality)
 
-- US xxx (Title of user story goes here)
-  - Description: xxx (Description of user store goes here)
-  - Estimate: xxx (Number of days of work required to implement the US)
-  - Priority: xxx (US priority number goes here)
-  - Status: xxx (US status)
+- US Cat and Meme (Title of user story goes here)
+  - Description: interactive website for random cat meme (Description of user store goes here)
+  - Estimate: two weeks (Number of days of work required to implement the US)
+  - Priority: n/a (US priority number goes here)
+  - Status: finished (US status)
 
 
 # Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
