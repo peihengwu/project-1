@@ -1,6 +1,4 @@
 // DEPENDENCIES (DOM Elements)
-
-
 // DATA / STATE / GLOBAL VARIABLES
 fetch('https://apimeme.com/?ref=apilist.fun')
   .then(response => response.json())
