@@ -47,6 +47,26 @@ var requesturl = "https://apimeme.com/?ref=apilist.fun"
 
 }
 // USER INTERACTIONS
+const request = require('request');
+
+const options = {
+  url: 'https://api.thecatapi.com/v1/images/search',
+  headers: {
+    'x-api-key': 'live_Nis7Y7Sn9ERk0mQfozVUtaA3TgkYZYhBvuXLoNVuhlMLtS7PvfXydplk9ECAFh16E'
+  }
+};
+
+request(options, (error, response, body) => {
+  if (!error && response.statusCode == 200) {
+    const data = JSON.parse(body);
+    const imageUrl = data[0].url;
+    console.log(imageUrl);
+  } else {
+    console.log(error);
+  }
+});
+
+
 // INITIALIZATION
 
  $.ajax({
