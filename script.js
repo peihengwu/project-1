@@ -48,10 +48,16 @@ var requesturl = "https://apimeme.com/?ref=apilist.fun"
 const request = require('request');
 
 const options = {
+  url: 'https://apimeme.com/meme',
   url: 'https://api.thecatapi.com/v1/images/search',
+  qs: {
+    meme: 'Random',
+    top: 'Top text',
+    bottom: 'Bottom text',
   headers: {
     'x-api-key': 'live_Nis7Y7Sn9ERk0mQfozVUtaA3TgkYZYhBvuXLoNVuhlMLtS7PvfXydplk9ECAFh16E'
   }
+}
 };
 
 request(options, (error, response, body) => {
@@ -63,6 +69,8 @@ request(options, (error, response, body) => {
     console.log(error);
   }
 });
+
+const request = require('request');
 
 
 // INITIALIZATION
